@@ -4,116 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EducaconIA</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', Arial, sans-serif;
-      background: #f5f0ec;
-      color: #111;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
-
-    .container {
-      max-width: 900px;
-      padding: 40px 20px;
-    }
-
-    .logo {
-      font-size: 48px;
-      font-weight: 800;
-      color: #1f2a44;
-      margin-bottom: 20px;
-    }
-
-    .logo span {
-      color: #4fd1c5;
-    }
-
-    h1 {
-      font-size: 48px;
-      line-height: 1.2;
-      margin-bottom: 20px;
-    }
-
-    h1 .highlight {
-      color: #2563eb;
-    }
-
-    p {
-      font-size: 18px;
-      color: #555;
-      margin-bottom: 30px;
-    }
-
-    .form-wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    input[type="email"] {
-      padding: 14px;
-      font-size: 16px;
-      border-radius: 30px;
-      border: 1px solid #ddd;
-      width: 60%;
-      max-width: 400px;
-      margin-right: 10px;
-    }
-
-    button {
-      padding: 14px 24px;
-      border-radius: 30px;
-      border: none;
-      background-color: #2563eb;
-      color: white;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #1e40af;
-    }
-
-    button.loading {
-      opacity: 0.6;
-      cursor: not-allowed;
-    }
-
-    .success-message {
-      margin-top: 20px;
-      color: #16a34a;
-      font-weight: bold;
-      display: none;
-    }
-
-    .error-message {
-      margin-top: 20px;
-      color: #dc2626;
-      font-weight: bold;
-      display: none;
-    }
-
-    @media (max-width: 600px) {
-      h1 { font-size: 32px; }
-      .form-wrapper { flex-direction: column; }
-      input[type="email"] {
-        width: 100%;
-        margin: 0 0 10px 0;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
 
   <div class="container">
-    <div class="logo">educa con <span>ia</span></div>
+    <div class="logo">
+      <div><img src="/assets/logo-educaconia.png" alt="Educación con IA" /></div>
+      <div>educa con <span>ia</span></div>
+    </div>
 
     <h1>
       Todo sobre <span class="highlight">educación e IA</span>,<br>
